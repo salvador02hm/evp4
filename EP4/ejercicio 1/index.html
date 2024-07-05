@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio1</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calculo de números impares comprendidos entre ellos inclusive</h1>
+    <div class="resultado">
+        <script>
+            var numero1,numero2;
+            numero1=parseInt(prompt("Ingrese el primer número"));
+            numero2=parseInt(prompt("Ingrese el segundo número"));
+
+            var contador = numero1
+
+            document.write("Cubos de numeros impares entre " + numero1 + " y " + numero2 + "<br>");
+
+            do {
+            if (contador%2 !==0) {
+                var cubo=contador*contador*contador;
+                document.write("El cubo de "+ contador+ " es: "+ cubo +  "<br>");
+            } 
+            contador++;
+            } while (contador <=numero2);
+        </script>
+    </div>    
+</body>
+</html>
